@@ -80,3 +80,15 @@ nav.tab a{flex:1;text-decoration:none;color:var(--muted);text-align:center;font-
 nav.tab a .ic{display:block;font-size:19px;margin-bottom:1px}
 nav.tab a.on{color:var(--amber);background:var(--amber-soft)}
 @media (prefers-color-scheme:dark){nav.tab a.on{color:var(--gold)}}
+
+/* Prominent safety notes across all teaching pages. */
+:root{--danger:#B91C1C;--danger-soft:#FFF1F2;--danger-line:#F4B4B8}
+@media(prefers-color-scheme:dark){:root{--danger:#FF8585;--danger-soft:#321B1D;--danger-line:#884A50}}
+.warn,.important{color:var(--danger);font-size:clamp(22px,5.8vw,26px);font-weight:800;line-height:1.55;overflow-wrap:anywhere}
+.warn{background:var(--danger-soft);border:2px solid var(--danger-line);border-left:7px solid var(--danger);padding:16px;margin:14px 0 20px}
+.warn b,.warn strong{color:inherit}
+.warn p{margin:0 0 10px}.warn p:last-child{margin-bottom:0}
+.klist li.important{font-size:22px}
+.klist li.important .k{color:var(--danger);background:var(--danger-soft);white-space:normal;font-size:16px}
+p.note.important{font-size:22px}
+video{object-fit:contain;max-height:calc(100svh - 160px)}

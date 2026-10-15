@@ -26,6 +26,8 @@
   .card .do{font-size:13px;color:var(--muted)}
   .card .url{font-size:9.5px;color:#9a938a;word-break:break-all;font-family:ui-monospace,Consolas,monospace}
   .foot{margin-top:18px;font-size:11px;color:var(--muted);text-align:center}
+  .warn{color:#B91C1C;background:#FFF1F2;border:2px solid #F4B4B8;border-left:7px solid #B91C1C;padding:14px;font-size:22px;font-weight:800;line-height:1.5;margin:16px 0}
+  @media(max-width:480px){.sheet{padding:16px}.head{flex-wrap:wrap}.head span{margin-left:0}.grid{grid-template-columns:1fr}.card img.qr{max-width:100%;height:auto}}
   @media print{
     body{background:#fff}
     .sheet{max-width:none;padding:0}
@@ -42,19 +44,20 @@
     <span>門市操作指引</span>
   </div>
   <p class="tip">手機相機或掃碼工具對準下方 QR Code 即可開啟；建議加入書籤。可整張列印張貼，或依此製作機身標籤。</p>
+  <div class="warn">注意：運轉中請勿將手伸入機內。<br>換膜前先關機、拔插頭，並待機台冷卻。</div>
   <div class="grid">
     <div class="card">
       <div class="lab"><span class="ic">📖</span><span class="ti">使用手冊</span></div>
       <div class="bar"></div>
       <img class="qr" src="assets/qr/manual.png" alt="使用手冊 QR">
-      <div class="do">開機・參數設定・故障碼</div>
+      <div class="do">開機・封杯・簡易排除</div>
       <div class="url">steven-yeh-1011.github.io/sealer-guide/manual.html</div>
     </div>
     <div class="card">
       <div class="lab"><span class="ic">🚿</span><span class="ti">清洗教學</span></div>
       <div class="bar"></div>
       <img class="qr" src="assets/qr/cleaning.png" alt="清洗教學 QR">
-      <div class="do">發熱盤與機台清潔（影片）</div>
+      <div class="do">封口機杯座清潔（影片）</div>
       <div class="url">steven-yeh-1011.github.io/sealer-guide/cleaning.html</div>
     </div>
     <div class="card">
